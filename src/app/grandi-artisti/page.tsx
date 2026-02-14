@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 
 export default function GrandiArtistiPage() {
   return (
@@ -19,13 +17,6 @@ export default function GrandiArtistiPage() {
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="font-bold text-lg leading-relaxed">
-            Questa sezione presenterà i grandi artisti gestiti da Pool Music Agency. In
-            arrivo: biografie, tour, release e contenuti esclusivi.
-          </p>
-          <div className="mt-12">
-            <Button href="/contatti">Contattaci per collaborazioni</Button>
-          </div>
         </div>
       </section>
 

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 
 export default function ProduzioniPage() {
   return (
@@ -19,23 +17,6 @@ export default function ProduzioniPage() {
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="font-bold text-lg leading-relaxed">
-            Concerti, festival, eventi privati e produzioni in house. Pool Music Agency
-            crea esperienze musicali che restano.
-          </p>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            <Card className="p-6">
-              <h2 className="font-black uppercase tracking-wider">Eventi</h2>
-              <p className="mt-3 font-bold">Concerti e showcase dal vivo.</p>
-            </Card>
-            <Card className="p-6" variant="accent">
-              <h2 className="font-black uppercase tracking-wider">Produzioni</h2>
-              <p className="mt-3 font-bold">Concept e realizzazione completa.</p>
-            </Card>
-          </div>
-          <div className="mt-12">
-            <Button href="/contatti">Parlaci del tuo evento</Button>
-          </div>
         </div>
       </section>
 

@@ -1,65 +1,140 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="relative">
+      {/* Hero Section - Neo-brutalist display */}
+      <section className="relative overflow-hidden border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h1 className="font-black uppercase leading-none tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl [text-shadow:4px_4px_0_#000]">
+            <span className="block -rotate-1">Pool</span>
+            <span className="mt-2 block rotate-1 text-neo-accent">Music Agency</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <div
+            className="mt-8 max-w-2xl border-4 border-neo-ink bg-neo-muted p-6 shadow-[8px_8px_0px_0px_#000]"
+          >
+            <p className="font-bold text-xl sm:text-2xl leading-relaxed text-neo-ink">
+              Promuoviamo artisti. Organizziamo concerti e show. Amiamo il nostro lavoro.
+            </p>
+          </div>
+        </div>
+
+        {/* Floating decorative sticker */}
+        <div
+          className="absolute right-4 top-1/4 hidden -rotate-12 border-4 border-neo-ink bg-neo-secondary px-4 py-2 font-black uppercase tracking-widest shadow-[8px_8px_0px_0px_#000] sm:block"
+          aria-hidden
+        >
+          Promo
+        </div>
+      </section>
+
+      {/* Section: Cosa facciamo */}
+      <section className="border-b-8 border-neo-ink bg-neo-secondary px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="font-black uppercase tracking-tighter text-4xl sm:text-5xl md:text-6xl">
+            Cosa facciamo
+          </h2>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Card className="p-6">
+              <h3 className="font-black uppercase tracking-wider text-lg">
+                Grandi Artisti
+              </h3>
+              <p className="mt-3 font-bold leading-relaxed">
+                Scopri i grandi artisti in esclusiva regionale.
+              </p>
+              <Link
+                href="/grandi-artisti"
+                className="mt-4 inline-block font-bold underline underline-offset-4"
+              >
+                Scopri di più →
+              </Link>
+            </Card>
+            <Card className="p-6" variant="muted">
+              <h3 className="font-black uppercase tracking-wider text-lg">
+                Le Nostre Produzioni
+              </h3>
+              <p className="mt-3 font-bold leading-relaxed">
+                I nostri show che portiamo in giro per l&apos;Italia!
+              </p>
+              <Link
+                href="/produzioni"
+                className="mt-4 inline-block font-bold underline underline-offset-4"
+              >
+                Scopri di più →
+              </Link>
+            </Card>
+            <Card className="p-6" variant="accent">
+              <h3 className="font-black uppercase tracking-wider text-lg">
+                Contatti
+              </h3>
+              <p className="mt-3 font-bold leading-relaxed">
+                Hai un progetto? Vuoi sapere come avere i nostri artisti per il tuo evento? Scrivici.
+              </p>
+              <Link
+                href="/contatti"
+                className="mt-4 inline-block font-bold underline underline-offset-4"
+              >
+                Contattaci →
+              </Link>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: CTA */}
+      <section className="border-b-8 border-neo-ink bg-neo-muted px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-black uppercase tracking-tighter text-4xl sm:text-5xl">
+            Pronto a fare rumore?
+          </h2>
+          <p className="mt-6 font-bold text-xl leading-relaxed">
+            Unisciti agli artisti che hanno scelto Pool Music Agency per la loro
+            carriera.
           </p>
+          <div className="mt-10">
+            <Button href="/contatti" variant="primary">
+              Inizia ora
+            </Button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t-4 border-neo-ink bg-neo-ink px-4 py-12 text-neo-white sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
+          <span className="font-black uppercase tracking-widest">
+            Pool Music Agency
+          </span>
+          <nav className="flex flex-wrap justify-center gap-6">
+            <Link
+              href="/"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Home
+            </Link>
+            <Link
+              href="/grandi-artisti"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Grandi Artisti
+            </Link>
+            <Link
+              href="/produzioni"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Produzioni
+            </Link>
+            <Link
+              href="/contatti"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Contatti
+            </Link>
+          </nav>
         </div>
-      </main>
+      </footer>
     </div>
   );
 }

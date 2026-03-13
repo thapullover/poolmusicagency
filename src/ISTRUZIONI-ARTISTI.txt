@@ -1,0 +1,101 @@
+================================================================================
+ISTRUZIONI: COME MODIFICARE L'ELENCO DEGLI ARTISTI SUL SITO
+================================================================================
+
+Questo file spiega passo-passo come aggiungere, rimuovere o riordinare gli
+artisti nella sezione "Grandi Artisti" del sito Pool Music Agency.
+
+
+1. DOVE SI TROVA IL FILE DEGLI ARTISTI
+--------------------------------------------------------------------------------
+Il file da modificare è:
+  src/data/grandi-artisti.ts
+
+Apri questo file con un editor di testo o con Cursor/VS Code. Contiene un
+array JavaScript con l'elenco degli artisti. L'ordine delle righe nel file
+corrisponde all'ordine di visualizzazione sul sito.
+
+
+2. COME AGGIUNGERE UN ARTISTA
+--------------------------------------------------------------------------------
+Passo 1: Prepara la foto dell'artista
+  - Formati consigliati: .jpg, .png o .webp
+  - Dimensioni consigliate: almeno 400x300 pixel (o proporzioni simili)
+  - Salva il file nella cartella: public/artisti/
+  - Esempio: public/artisti/mario-rossi.jpg
+
+Passo 2: Aggiungi l'artista nel file grandi-artisti.ts
+  - Apri src/data/grandi-artisti.ts
+  - Aggiungi una nuova riga nell'array, seguendo questo formato:
+    { name: "Nome Cognome", image: "/artisti/nome-file.jpg" }
+  - Esempio:
+    { name: "Mario Rossi", image: "/artisti/mario-rossi.jpg" }
+  - Attenzione: il path dell'immagine inizia sempre con /artisti/
+  - Usa la virgola per separare un artista dall'altro
+
+Passo 3: Salva il file
+
+
+3. COME RIMUOVERE UN ARTISTA
+--------------------------------------------------------------------------------
+  - Apri src/data/grandi-artisti.ts
+  - Elimina la riga corrispondente all'artista che vuoi rimuovere
+  - Attenzione: non lasciare virgole "orfane" (es. una virgola dopo l'ultimo
+    elemento dell'array)
+  - Salva il file
+
+
+4. COME CAMBIARE L'ORDINE DEGLI ARTISTI
+--------------------------------------------------------------------------------
+  - Apri src/data/grandi-artisti.ts
+  - Sposta le righe nell'ordine desiderato (taglia e incolla)
+  - Il primo artista nell'array apparirà per primo in alto a sinistra
+  - Salva il file
+
+
+5. FORMATO DEL PATH DELLE IMMAGINI
+--------------------------------------------------------------------------------
+Il path deve sempre:
+  - Iniziare con /artisti/
+  - Includere il nome del file con estensione
+  - Esempi corretti:
+    /artisti/artista1.jpg
+    /artisti/mario-rossi.png
+    /artisti/show-2024.webp
+  - Esempio errato:
+    artisti/artista1.jpg   (manca la barra iniziale)
+
+
+6. FORMATI IMMAGINE CONSIGLIATI
+--------------------------------------------------------------------------------
+  - JPG (.jpg, .jpeg): ideale per foto, buona compressione
+  - PNG (.png): per immagini con trasparenza
+  - WebP (.webp): formato moderno, ottimo rapporto qualità/dimensione
+
+Evita file troppo pesanti (oltre 1-2 MB) per non rallentare il sito.
+
+
+7. COSA FARE DOPO LE MODIFICHE
+--------------------------------------------------------------------------------
+Dopo aver modificato il file e/o aggiunto nuove foto:
+
+  - Salva tutti i file
+  - Se usi Git e Vercel:
+    1. Apri il terminale nella cartella del progetto
+    2. Esegui: git add .
+    3. Esegui: git commit -m "Aggiornato elenco artisti"
+    4. Esegui: git push origin main
+
+  - Vercel farà automaticamente un nuovo deploy. Attendi 1-2 minuti e
+    ricarica il sito per vedere le modifiche.
+
+
+================================================================================
+BONUS: MODIFICARE LE PRODUZIONI
+================================================================================
+Per la sezione "Le Nostre Produzioni" il procedimento è identico, ma:
+  - File da modificare: src/data/produzioni.ts
+  - Cartella foto: public/produzioni/
+  - Path immagini: /produzioni/nome-file.jpg
+
+================================================================================

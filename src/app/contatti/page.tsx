@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
 
 export default function ContattiPage() {
   return (
@@ -12,66 +9,26 @@ export default function ContattiPage() {
             Contatti
           </h1>
           <p className="mt-6 max-w-2xl font-bold text-xl sm:text-2xl leading-relaxed">
-            Hai un progetto? Vuoi far crescere il tuo brand musicale? Scrivici.
+            Hai un evento in progetto? Vuoi far esibire i nostri artisti? Scrivici!
           </p>
         </div>
       </section>
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl">
-          <form
-            className="space-y-6 border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
-            onSubmit={(e) => e.preventDefault()}
+          <div
+            className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
           >
-            <div>
-              <label
-                htmlFor="name"
-                className="block font-bold uppercase tracking-wider"
-              >
-                Nome
-              </label>
-              <input
-                id="name"
-                type="text"
-                required
-                className="mt-2 block w-full border-4 border-neo-ink bg-neo-canvas px-4 py-3 font-bold outline-none transition-all focus:bg-neo-secondary focus:shadow-[4px_4px_0px_0px_#000] focus:outline-none focus:ring-0"
-                placeholder="Il tuo nome"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block font-bold uppercase tracking-wider"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                required
-                className="mt-2 block w-full border-4 border-neo-ink bg-neo-canvas px-4 py-3 font-bold outline-none transition-all focus:bg-neo-secondary focus:shadow-[4px_4px_0px_0px_#000] focus:outline-none focus:ring-0"
-                placeholder="email@esempio.it"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block font-bold uppercase tracking-wider"
-              >
-                Messaggio
-              </label>
-              <textarea
-                id="message"
-                rows={5}
-                required
-                className="mt-2 block w-full border-4 border-neo-ink bg-neo-canvas px-4 py-3 font-bold outline-none transition-all focus:bg-neo-secondary focus:shadow-[4px_4px_0px_0px_#000] focus:outline-none focus:ring-0"
-                placeholder="Raccontaci del tuo progetto..."
-              />
-            </div>
-            <Button variant="primary">
-              Invia messaggio
-            </Button>
-          </form>
+            <p className="font-bold uppercase tracking-wider text-neo-ink">
+              Email
+            </p>
+            <a
+              href="mailto:amministrazione@poolmusicagency.it"
+              className="mt-3 block font-black text-xl sm:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent"
+            >
+              amministrazione@poolmusicagency.it
+            </a>
+          </div>
         </div>
       </section>
 

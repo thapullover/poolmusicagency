@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { artisti } from "@/data/grandi-artisti";
+import { ArtistCard } from "@/components/ArtistCard";
 
 export default function GrandiArtistiPage() {
   return (
@@ -9,14 +11,23 @@ export default function GrandiArtistiPage() {
             Grandi Artisti
           </h1>
           <p className="mt-6 max-w-2xl font-bold text-xl sm:text-2xl leading-relaxed text-neo-ink">
-            I talenti che rappresentiamo. Strategie di promoting su misura per
-            ogni artista.
+            Le nostre esclusive regionali dei grandi artisti nazionali!
           </p>
         </div>
       </section>
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {artisti.map((artista) => (
+              <ArtistCard
+                key={artista.name}
+                name={artista.name}
+                image={artista.image}
+                variant="default"
+              />
+            ))}
+          </div>
         </div>
       </section>
 

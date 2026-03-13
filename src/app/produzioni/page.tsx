@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { produzioni } from "@/data/produzioni";
+import { ArtistCard } from "@/components/ArtistCard";
 
 export default function ProduzioniPage() {
   return (
@@ -17,6 +19,16 @@ export default function ProduzioniPage() {
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {produzioni.map((produzione) => (
+              <ArtistCard
+                key={produzione.name}
+                name={produzione.name}
+                image={produzione.image}
+                variant="muted"
+              />
+            ))}
+          </div>
         </div>
       </section>
 

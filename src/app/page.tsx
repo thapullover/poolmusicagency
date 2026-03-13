@@ -16,7 +16,7 @@ export default function Home() {
             className="mt-8 max-w-2xl border-4 border-neo-ink bg-neo-muted p-6 shadow-[8px_8px_0px_0px_#000]"
           >
             <p className="font-bold text-xl sm:text-2xl leading-relaxed text-neo-ink">
-              Promuoviamo artisti. Organizziamo concerti e show. Amiamo il nostro lavoro.
+              Organizziamo concerti, show ed eventi. Promuoviamo artisti.
             </p>
           </div>
         </div>

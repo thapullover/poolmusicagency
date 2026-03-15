@@ -4,7 +4,7 @@
  */
 
 export const produzioni = [
-  { name: "Ritmo90", image: "/produzioni/" },
+  { name: "Ritmo90", image: "/produzioni/ritmo90.jpeg" },
   { name: "Ritmo Italiano", image: "/produzioni/ritmoitaliano.jpeg" },
   { name: "Scirockati", image: "/produzioni/scirockati.jpeg" },
   { name: "Jova Live", image: "/produzioni/jovalive.jpeg" },

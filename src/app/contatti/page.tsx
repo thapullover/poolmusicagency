@@ -24,7 +24,7 @@ export default function ContattiPage() {
             </p>
             <a
               href="mailto:amministrazione@poolmusicagency.it"
-              className="mt-3 block font-black text-xl sm:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent"
+              className="mt-3 block font-black text-base sm:text-xl md:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent break-words"
             >
               amministrazione@poolmusicagency.it
             </a>

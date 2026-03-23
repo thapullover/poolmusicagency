@@ -83,19 +83,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section: CTA */}
+      {/* Section: Chi siamo */}
       <section className="border-b-8 border-neo-ink bg-neo-muted px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-black uppercase tracking-tighter text-4xl sm:text-5xl">
-            Pronto a fare rumore?
+            Chi siamo
           </h2>
           <p className="mt-6 font-bold text-xl leading-relaxed">
-            Unisciti agli artisti che hanno scelto Pool Music Agency per la loro
-            carriera.
+            Organizziamo eventi, spettacoli e feste di piazza per enti pubblici, Pro Loco, comitati festeggiamenti e aziende in tutto il Lazio.
+          </p>
+          <p className="mt-4 font-bold text-xl leading-relaxed">
+            Nessun intermediario, contatti diretti con management e produzione.
+          </p>
+          <p className="mt-4 font-bold text-xl leading-relaxed">
+            Pronti a trovare la soluzione per il vostro evento?
+          </p>
+          <p className="mt-4 font-bold text-xl leading-relaxed">
+            Raccontaci la tua manifestazione e ti proponiamo la soluzione artistica più adatta.
           </p>
           <div className="mt-10">
             <Button href="/contatti" variant="primary">
-              Inizia ora
+              CONTATTACI
             </Button>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function ContattiPage() {
       </section>
 
       <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-2xl space-y-6">
           <div
             className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
           >
@@ -27,6 +27,38 @@ export default function ContattiPage() {
               className="mt-3 block font-black text-base sm:text-xl md:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent break-words"
             >
               amministrazione@poolmusicagency.it
+            </a>
+          </div>
+          <div
+            className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
+          >
+            <p className="font-bold uppercase tracking-wider text-neo-ink">
+              Ufficio Enti Locali
+            </p>
+            <a
+              href="tel:3388138355"
+              className="mt-3 block font-black text-base sm:text-xl md:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent"
+            >
+              <span className="inline-flex items-center gap-2">
+                <span aria-hidden>📞</span>
+                338 8138355
+              </span>
+            </a>
+          </div>
+          <div
+            className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
+          >
+            <p className="font-bold uppercase tracking-wider text-neo-ink">
+              Ufficio Privati
+            </p>
+            <a
+              href="tel:3938859806"
+              className="mt-3 block font-black text-base sm:text-xl md:text-2xl text-neo-ink underline underline-offset-4 transition-colors hover:text-neo-accent"
+            >
+              <span className="inline-flex items-center gap-2">
+                <span aria-hidden>📞</span>
+                393 8859806
+              </span>
             </a>
           </div>
         </div>

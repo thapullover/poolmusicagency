@@ -5,9 +5,10 @@ type ArtistCardProps = {
   name: string;
   image: string;
   variant?: "default" | "accent" | "muted";
+  objectPosition?: "top" | "center";
 };
 
-export function ArtistCard({ name, image, variant = "default" }: ArtistCardProps) {
+export function ArtistCard({ name, image, variant = "default", objectPosition = "center" }: ArtistCardProps) {
   return (
     <Card variant={variant} className="overflow-hidden p-0">
       <div className="relative aspect-[4/3] w-full">
@@ -15,7 +16,7 @@ export function ArtistCard({ name, image, variant = "default" }: ArtistCardProps
           src={image}
           alt={name}
           fill
-          className="object-cover"
+          className={objectPosition === "top" ? "object-cover object-top" : "object-cover"}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>

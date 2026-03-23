@@ -14,7 +14,7 @@ export default function ContattiPage() {
         </div>
       </section>
 
-      <section className="border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="border-b-8 border-neo-ink bg-neo-canvas px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl space-y-6">
           <div
             className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"

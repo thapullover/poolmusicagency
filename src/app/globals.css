@@ -63,3 +63,83 @@ body {
   color: var(--neo-ink);
   font-family: var(--font-space-grotesk), system-ui, sans-serif;
 }
+
+/* ============================================
+   PRINT STYLES - Depliant A4
+   ============================================ */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .depliant-print {
+    max-width: 100%;
+    padding-bottom: 80px; /* Spazio per il footer fisso */
+  }
+
+  .depliant-section {
+    page-break-after: auto;
+    page-break-inside: avoid;
+  }
+
+  .depliant-section:not(:last-of-type) {
+    page-break-after: auto;
+  }
+
+  /* Sezioni a tutta pagina con contenuto centrato verticalmente */
+  .depliant-fullpage {
+    min-height: 267mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Footer fisso su ogni pagina in stampa */
+  .depliant-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  /* Maschera per nascondere il footer sulla prima pagina */
+  .depliant-footer-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: var(--neo-canvas);
+    z-index: 1;
+  }
+
+  .depliant-card {
+    page-break-inside: avoid;
+  }
+
+  /* Evita che le card si spezzino tra le pagine */
+  .depliant-print .grid {
+    break-inside: avoid;
+  }
+
+  /* Riduce gli spazi per ottimizzare le pagine */
+  .depliant-print section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Assicura che ombre e bordi stampino correttamente */
+  .depliant-print * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

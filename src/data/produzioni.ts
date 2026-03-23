@@ -9,7 +9,7 @@ export const produzioni = [
   { name: "Scirockati", image: "/produzioni/scirockati.jpeg" },
   { name: "Jova Live", image: "/produzioni/jovalive.jpeg" },
   { name: "Pensieri Positivi", image: "/produzioni/pensieripositivi.jpeg" },
-  { name: "Deca Band", image: "/produzioni/decaband.png" },
+  { name: "Deca Band", image: "/produzioni/decaband.jpeg" },
   { name: "Maggese", image: "/produzioni/maggese.jpeg" },
   { name: "Festivalbar's Tribute", image: "/produzioni/festivalbars.jpeg" },
   { name: "Made in Italy", image: "/produzioni/madeinitaly.jpeg" },

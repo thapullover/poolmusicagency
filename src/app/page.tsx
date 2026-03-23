@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section - Neo-brutalist display */}
-      <section className="relative overflow-hidden border-b-8 border-neo-ink bg-neo-canvas bg-halftone px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <section className="relative overflow-hidden border-b-8 border-neo-ink bg-neo-canvas px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h1 className="font-black uppercase leading-none tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl [text-shadow:4px_4px_0_#000]">
             <span className="block -rotate-1">Pool</span>

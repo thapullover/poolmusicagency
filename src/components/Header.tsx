@@ -16,7 +16,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b-4 border-neo-ink bg-neo-canvas shadow-[8px_8px_0px_0px_#000]">
+    <header className="sticky top-0 z-50 border-b-4 border-neo-ink bg-neo-canvas shadow-[8px_8px_0px_0px_#000] print:hidden">
       <div className="mx-auto flex min-h-14 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link

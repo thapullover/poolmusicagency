@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section - Neo-brutalist display */}
-      <section className="relative overflow-hidden border-b-8 border-neo-ink bg-neo-canvas px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <section className="relative overflow-x-hidden border-b-8 border-neo-ink bg-neo-canvas px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:pb-28">
         <div className="mx-auto max-w-7xl">
           <h1 className="font-black uppercase leading-none tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl [text-shadow:4px_4px_0_#000]">
             <span className="block -rotate-1">Pool</span>
@@ -21,12 +21,62 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Floating decorative sticker */}
+        {/* Floating decorative stickers (desktop) */}
         <div
-          className="absolute right-4 top-1/4 hidden -rotate-12 border-4 border-neo-ink bg-neo-secondary px-4 py-2 font-black uppercase tracking-widest shadow-[8px_8px_0px_0px_#000] sm:block"
+          className="pointer-events-none absolute right-[2%] top-[10%] hidden -rotate-12 border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block"
+          style={{ backgroundColor: "#C4B5FD" }}
           aria-hidden
         >
-          Promo
+          Comici
+        </div>
+        <div
+          className="pointer-events-none absolute right-[6%] top-[24%] hidden rotate-6 border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block lg:right-[8%]"
+          style={{ backgroundColor: "#FFD93D" }}
+          aria-hidden
+        >
+          Grandi artisti
+        </div>
+        <div
+          className="pointer-events-none absolute right-[4%] top-[40%] hidden -rotate-6 border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block"
+          style={{ backgroundColor: "#FF6B6B" }}
+          aria-hidden
+        >
+          Tribute band
+        </div>
+        <div
+          className="pointer-events-none absolute right-[10%] top-[50%] hidden rotate-[10deg] border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block lg:right-[14%]"
+          style={{ backgroundColor: "#C4B5FD" }}
+          aria-hidden
+        >
+          Live show
+        </div>
+        <div
+          className="pointer-events-none absolute right-[3%] top-[60%] hidden -rotate-[8deg] border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block"
+          style={{ backgroundColor: "#FFD93D" }}
+          aria-hidden
+        >
+          Cabaret
+        </div>
+        <div
+          className="pointer-events-none absolute right-[8%] top-[70%] hidden rotate-3 border-4 border-neo-ink px-2 py-2 text-center text-xs font-black uppercase leading-tight tracking-wide shadow-[8px_8px_0px_0px_#000] lg:max-w-[11rem] lg:block lg:right-[12%] lg:text-sm"
+          style={{ backgroundColor: "#FF6B6B" }}
+          aria-hidden
+        >
+          Service audio e luci
+        </div>
+        <div
+          className="pointer-events-none absolute bottom-[20%] right-[5%] hidden -rotate-[10deg] border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block"
+          style={{ backgroundColor: "#C4B5FD" }}
+          aria-hidden
+        >
+          Palco
+        </div>
+        <div
+          className="pointer-events-none absolute bottom-[6%] right-[8%] hidden rotate-[7deg] border-4 border-neo-ink px-3 py-2 font-black uppercase tracking-wider shadow-[8px_8px_0px_0px_#000] lg:block lg:right-[10%]"
+          style={{ backgroundColor: "#FFD93D" }}
+          aria-hidden
+        >
+          Promozione eventi
         </div>
       </section>
 

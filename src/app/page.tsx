@@ -112,9 +112,14 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t-4 border-neo-ink bg-neo-ink px-4 py-12 text-neo-white sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
-          <span className="font-black uppercase tracking-widest">
-            Pool Music Agency
-          </span>
+          <div className="flex flex-col items-center gap-1 sm:items-start">
+            <span className="font-black uppercase tracking-widest">
+              Pool Music Agency SRLS
+            </span>
+            <span className="text-center text-sm font-bold text-neo-white/90 sm:text-left">
+              P.IVA 03311560605
+            </span>
+          </div>
           <nav className="flex flex-wrap justify-center gap-6">
             <Link
               href="/"

@@ -159,8 +159,11 @@ export default function DepliantPage() {
 
       {/* Footer del depliant */}
       <footer className="depliant-footer border-t-4 border-neo-ink bg-neo-ink px-6 py-6 text-neo-white">
-        <div className="mx-auto max-w-6xl text-center">
-          <span className="font-black uppercase tracking-widest text-sm">Pool Music Agency</span>
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-1 text-center">
+          <span className="font-black uppercase tracking-widest text-sm">Pool Music Agency SRLS</span>
+          <span className="text-xs font-bold text-neo-white/90">
+            P.IVA 03311560605
+          </span>
         </div>
       </footer>
     </div>

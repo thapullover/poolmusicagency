@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { artisti } from "@/data/grandi-artisti";
 import { produzioni } from "@/data/produzioni";
 
 export const metadata = {
-  title: "Depliant | Pool Music Agency",
-  description: "Brochure stampabile di Pool Music Agency",
+  title: "Depliant | Pool Music Agency SRLS",
+  description: "Brochure stampabile di Pool Music Agency SRLS",
 };
 
 export default function DepliantPage() {
@@ -24,7 +25,7 @@ export default function DepliantPage() {
           </div>
         </div>
         {/* Maschera per nascondere il footer sulla prima pagina in stampa */}
-        <div className="depliant-footer-mask hidden h-20 w-full print:block" aria-hidden />
+        <div className="depliant-footer-mask hidden h-40 w-full print:block" aria-hidden />
       </section>
 
       {/* Chi siamo */}
@@ -158,12 +159,42 @@ export default function DepliantPage() {
       </section>
 
       {/* Footer del depliant */}
-      <footer className="depliant-footer border-t-4 border-neo-ink bg-neo-ink px-6 py-6 text-neo-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-1 text-center">
-          <span className="font-black uppercase tracking-widest text-sm">Pool Music Agency SRLS</span>
-          <span className="text-xs font-bold text-neo-white/90">
-            P.IVA 03311560605
-          </span>
+      <footer className="depliant-footer border-t-4 border-neo-ink bg-neo-ink px-4 py-12 text-neo-white sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
+          <div className="flex flex-col items-center gap-1 sm:items-start">
+            <span className="font-black uppercase tracking-widest">
+              Pool Music Agency SRLS
+            </span>
+            <span className="text-center text-sm font-bold text-neo-white/90 sm:text-left">
+              P.IVA 03311560605
+            </span>
+          </div>
+          <nav className="flex flex-wrap justify-center gap-6" aria-label="Navigazione footer">
+            <Link
+              href="/"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Home
+            </Link>
+            <Link
+              href="/grandi-artisti"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Grandi Artisti
+            </Link>
+            <Link
+              href="/produzioni"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Produzioni
+            </Link>
+            <Link
+              href="/contatti"
+              className="font-bold underline underline-offset-4 hover:no-underline"
+            >
+              Contatti
+            </Link>
+          </nav>
         </div>
       </footer>
     </div>

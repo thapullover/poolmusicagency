@@ -82,7 +82,7 @@ body {
 
   .depliant-print {
     max-width: 100%;
-    padding-bottom: 80px; /* Spazio per il footer fisso */
+    padding-bottom: 160px; /* Spazio per il footer fisso (brand + P.IVA + nav) */
   }
 
   .depliant-section {
@@ -117,7 +117,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 160px;
     background: var(--neo-canvas);
     z-index: 1;
   }

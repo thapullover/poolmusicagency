@@ -11,8 +11,7 @@ export default function ProduzioniPage() {
             Le Nostre Produzioni
           </h1>
           <p className="mt-6 max-w-2xl font-bold text-xl sm:text-2xl leading-relaxed text-neo-ink">
-            Eventi, concerti e produzioni originali. Dal concept alla
-            realizzazione sul palco.
+            Le nostre produzioni originali. Dal concept alla realizzazione sul palco.
           </p>
         </div>
       </section>

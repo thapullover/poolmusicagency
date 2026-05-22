@@ -9,7 +9,7 @@ export default function ContattiPage() {
             Contatti
           </h1>
           <p className="mt-6 max-w-2xl font-bold text-xl sm:text-2xl leading-relaxed">
-            Hai un evento in progetto? Vuoi far esibire i nostri artisti? Scrivici!
+            Hai un evento in progetto? Vuoi far esibire i nostri artisti? Contattaci!
           </p>
         </div>
       </section>

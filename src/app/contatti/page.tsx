@@ -33,7 +33,7 @@ export default function ContattiPage() {
             className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
           >
             <p className="font-bold uppercase tracking-wider text-neo-ink">
-              Ufficio Enti Locali
+              Resp. Amministrazione
             </p>
             <a
               href="tel:3388138355"
@@ -49,7 +49,7 @@ export default function ContattiPage() {
             className="border-4 border-neo-ink bg-neo-white p-6 shadow-[8px_8px_0px_0px_#000] sm:p-8"
           >
             <p className="font-bold uppercase tracking-wider text-neo-ink">
-              Ufficio Privati
+              Resp. Commerciale
             </p>
             <a
               href="tel:3938859806"

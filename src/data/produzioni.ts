@@ -5,6 +5,7 @@
 
 export const produzioni = [
   { name: "Ritmo90", image: "/produzioni/ritmo90.jpeg" },
+  { name: "Generazione Indie", image: "/produzioni/generazione-indie.png" },
   { name: "Ritmo Italiano", image: "/produzioni/ritmoitaliano.jpeg" },
   { name: "Scirockati", image: "/produzioni/scirockati.jpeg" },
   { name: "Jova Live", image: "/produzioni/jovalive.jpeg" },
